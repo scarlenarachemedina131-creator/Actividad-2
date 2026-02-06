@@ -1,0 +1,49 @@
+# Tuplas de carreras
+carreras =  ("Ingeniería de Software", "Contabilidad", "Derecho") 
+
+
+personas = [
+    ("Juan", "Pérez", 38, 0),
+    ("Carlos", "Santana", 29, 1),
+    ("Raúl", "Sosa", 19, 2)
+]
+estudiantes = []
+
+# Solicita los datos aquí
+for _ in range(5):
+    print(  "Registro del estudiante { +1}"   )
+
+    
+    Nombre = input ("Ingrese el Nombre: ") # string
+    Apellido = input("Ingrese el apellido: ") # string
+    Edad = int (input ("Ingrese la edad: ")) # numero  >-  integer
+    carreras = int (input ("Ingrese la carrerra (o, 1 o 2): "))
+                     # integer 
+
+
+    Persona = (Nombre, Apellido, Edad,carreras)
+    print ()
+
+    for p in personas: 
+        Nombre = p[0]
+        Apellido = p[1]
+        Edad = p[2]
+        carreras = p[3]
+         
+    estudiantes = {
+
+            "Nombre": Nombre,
+            "Apellido": Apellido,
+            "Edad": Edad,
+            "Carrera": carreras,
+         }
+        
+
+        #Mostrar resultados
+    for e in estudiantes: 
+           print(
+              e["Nombre"],
+              e["Apellido"],
+              e["Edad"],
+              e["Carreras"],
+                )
